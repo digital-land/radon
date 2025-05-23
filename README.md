@@ -1,6 +1,6 @@
 Demonstration of hosting the [British Geological Survey (BGS)](https://www.bgs.ac.uk/) [radon indicitive atlas](https://www.bgs.ac.uk/download/radon-potential-indicative-atlas-data-for-great-britain/) as vector tiles on GitHub pages.
 
-    The Radon potential dataset provides the current definitive map of radon-affected areas in Great Britain and Northern Ireland. This data presents a simplified version of the radon potential dataset with each 1 km-grid square being classed according to the highest radon potential found within it, so is indicative rather than definitive. For more information and to licence or access free versions of the data please visit our Radon potential webpage.
+> The Radon potential dataset provides the current definitive map of radon-affected areas in Great Britain and Northern Ireland. This data presents a simplified version of the radon potential dataset with each 1 km-grid square being classed according to the highest radon potential found within it, so is indicative rather than definitive. For more information and to licence or access free versions of the data please visit our Radon potential webpage.
 
 # Rebuilding the data
 
