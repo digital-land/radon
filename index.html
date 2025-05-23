@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radon</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.min.js"></script>
+</head>
+<body style='margin:0'>
+    <div id="map" style="width: 100vw; height: 100vh; background: #fdfdfd"></div>
+    <script>
+    (function() {
+        var map = L.map('map', {
+            center: [51.237, -2.468],
+            minZoom: 7,
+            maxZoom: 14,
+            zoomControl: true,
+            zoom: 8,
+        });
+        var hash = new L.Hash(map);
+        var mapBaseLayer = L.tileLayer(
+            'https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png', {
+                attribution: '(C) OpenStreetMap contributors (C) CARTO'
+            }
+        ).addTo(map);
+
+        const colours = {
+            6: "#762E3F",
+            5: "#9A3C52",
+            4: "#B06C72",
+            3: "#C5A29F",
+            2: "#E7BC9F",
+            1: "#FEF0D9"
+        }
+
+        var vectorTileStyling = {
+            "radon-potential": function(properties) {
+                return ({
+                    fill: true,
+                    fillColor: colours[properties["radon-potential-class"]],
+                    fillOpacity: 0.9,
+                    weight: 1,
+                    color: "#ffffff",
+                    opacity: 1.0,
+                });
+            }
+        }
+
+        var mapPbfLayer = new L.VectorGrid.Protobuf(
+            "tiles/{z}/{x}/{y}.pbf",
+            {
+                rendererFactory: L.canvas.tile,
+                interactive: true,
+                attribution: 'Contains British Geological Survey materials © UKRI 2021',
+                maxNativeZoom: 14,
+                minZoom: 6,
+                vectorTileLayerStyles: vectorTileStyling,
+            }
+        )
+        mapPbfLayer.addTo(map);
+    })();
+    </script>
+</body>
+</html>

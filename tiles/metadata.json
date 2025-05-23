@@ -1,0 +1,16 @@
+{
+"name": "tiles/",
+"description": "tiles/",
+"version": "2",
+"minzoom": "6",
+"maxzoom": "14",
+"center": "-7.569580,56.854979,14",
+"bounds": "-7.752400,49.861160,1.771300,60.867250",
+"antimeridian_adjusted_bounds": "-7.752400,49.861160,1.771300,60.867250",
+"type": "overlay",
+"strategies": "[{},{},{},{},{},{},{\"detail_reduced\":15,\"tiny_polygons\":449750,\"tile_size_desired\":3423956},{\"detail_reduced\":35,\"tiny_polygons\":319680,\"tile_size_desired\":1547018},{\"tiny_polygons\":113},{\"tiny_polygons\":109},{\"tiny_polygons\":90},{\"tiny_polygons\":101},{\"tiny_polygons\":84},{\"tiny_polygons\":71},{\"tiny_polygons\":68}]",
+"format": "pbf",
+"generator": "tippecanoe v2.53.0",
+"generator_options": "tippecanoe -Z6 -z14 --no-tile-compression '--output-to-directory=tiles/' -L radon-potential:dataset/radon-potential.geojson",
+"json": "{\"vector_layers\":[{\"id\":\"radon-potential\",\"description\":\"\",\"minzoom\":6,\"maxzoom\":14,\"fields\":{\"radon-potential-class\":\"Number\",\"reference\":\"String\"}}],\"tilestats\":{\"layerCount\":1,\"layers\":[{\"layer\":\"radon-potential\",\"count\":242326,\"geometry\":\"Polygon\",\"attributeCount\":2,\"attributes\":[{\"attribute\":\"radon-potential-class\",\"count\":6,\"type\":\"number\",\"values\":[1,2,3,4,5,6],\"min\":1,\"max\":6},{\"attribute\":\"reference\",\"count\":1000,\"type\":\"string\",\"values\":[\"HP4700\",\"HP4701\",\"HP4702\",\"HP4703\",\"HP4704\",\"HP4705\",\"HP4800\",\"HP4801\",\"HP4802\",\"HP4803\",\"HP4804\",\"HP4805\",\"HP4806\",\"HP4900\",\"HP4901\",\"HP4902\",\"HP4903\",\"HP4904\",\"HP4905\",\"HP5000\",\"HP5001\",\"HP5002\",\"HP5003\",\"HP5004\",\"HP5005\",\"HP5100\",\"HP5101\",\"HP5102\",\"HP5103\",\"HP5104\",\"HP5105\",\"HP5106\",\"HP5200\",\"HP5201\",\"HP5202\",\"HP5203\",\"HP5204\",\"HP5205\",\"HP5206\",\"HP5300\",\"HP5301\",\"HP5302\",\"HP5303\",\"HP5304\",\"HP5305\",\"HP5400\",\"HP5401\",\"HP5402\",\"HP5403\",\"HP5404\",\"HP5405\",\"HP5500\",\"HP5501\",\"HP5502\",\"HP5503\",\"HP5504\",\"HP5505\",\"HP5506\",\"HP5600\",\"HP5601\",\"HP5602\",\"HP5603\",\"HP5604\",\"HP5605\",\"HP5606\",\"HP5607\",\"HP5611\",\"HP5612\",\"HP5700\",\"HP5701\",\"HP5702\",\"HP5703\",\"HP5704\",\"HP5705\",\"HP5706\",\"HP5707\",\"HP5708\",\"HP5709\",\"HP5710\",\"HP5711\",\"HP5712\",\"HP5713\",\"HP5714\",\"HP5715\",\"HP5800\",\"HP5801\",\"HP5802\",\"HP5803\",\"HP5804\",\"HP5805\",\"HP5806\",\"HP5807\",\"HP5808\",\"HP5809\",\"HP5810\",\"HP5811\",\"HP5812\",\"HP5813\",\"HP5814\",\"HP5815\"]}]}]}}"
+}

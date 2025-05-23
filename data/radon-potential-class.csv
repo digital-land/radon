@@ -1,0 +1,7 @@
+reference,name,paint-options
+6,"30-100%","{'color':'#762E3F'}"
+5,"10-<30%","{'color':'#9A3C52'}"
+4,"5-<10%","{'color':'#B06C72'}"
+3,"3-<5%","{'color':'#C5A29F'}"
+2,"1-<3%","{'color':'#E7BC9F'}"
+1,"0-<1%","{'color':'#FEF0D9'}"
