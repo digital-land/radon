@@ -25,7 +25,7 @@ We recommend working in [virtual environment](http://docs.python-guide.org/en/la
 
 The software in this project is open source and covered by the [LICENSE](LICENSE) file.
 
-The radon indivitive atlas dataset is used under the terms of the [Open Government 3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) licence which [Contains British Geological Survey materials © UKRI 2021](https://www.bgs.ac.uk/bgs-intellectual-property-rights/open-government-licence/).
+The radon indicative atlas dataset is used under the terms of the [Open Government 3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) licence which [Contains British Geological Survey materials © UKRI 2021](https://www.bgs.ac.uk/bgs-intellectual-property-rights/open-government-licence/).
 
 Other individual datasets copied into this repository may have specific copyright and licensing, otherwise all content and data in this repository is
 [© Crown copyright](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/)
